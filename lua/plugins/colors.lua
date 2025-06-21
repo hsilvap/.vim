@@ -50,23 +50,28 @@ local monokai = {
 }
 
 return {
+	{
+		"folke/tokyonight.nvim",
+		lazy = false,
+		priority = 1000,
+		enabled = false,
+		config = function()
+			-- vim.cmd('colorscheme tokyonight')
+		end,
+	},
 
-	{ "JavierParra/Catppuccino.nvim",
+	{
+		"catppuccin/nvim",
+		name = "catppuccin",
 		priority = 1000,
 		lazy = false,
 		config = function()
-			local catppuccino = require("catppuccino")
-			catppuccino.setup(
-				{
-					colorscheme = "catppuccino",
-					transparency = true,
-					integrations = {
-						coc = true,
-					},
+			require("catppuccin").setup({
+				integrations = {
+					coc_nvim = true,
 				},
-				monokai
-			)
-			vim.cmd('colorscheme catppuccino')
-		end
+			})
+			vim.cmd("colorscheme catppuccin")
+		end,
 	},
 }

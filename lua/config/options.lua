@@ -56,7 +56,7 @@ local options_set = {
 	-- lines of margin between the cursor and top-bottom of document
 	scrolloff = 4,
 	-- vertical ruler
-	colorcolumn = {79},
+	-- colorcolumn = {79},
 	-- prevents adding a new line to files
 	fixeol = false,
 

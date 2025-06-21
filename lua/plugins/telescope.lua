@@ -78,6 +78,11 @@ local M = {
 			"<cmd>Telescope coc references initial_mode=normal theme=cursor<CR>",
 			desc = "Find symbol's references",
 		},
+		{
+			"<leader>fi",
+			"<cmd>Telescope coc implementations initial_mode=normal theme=cursor<CR>",
+			desc = "Find symbol's implementations",
+		},
 	},
 }
 

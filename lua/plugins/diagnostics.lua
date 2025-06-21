@@ -249,7 +249,7 @@ local M = {
 		"neoclide/coc.nvim",
 		branch = "release",
 		-- Build step is only needed if branch is `master`
-		-- build = "pwd && npm ci --no-save",
+		build = "pwd && npm ci --no-save",
 	},
 	{
 		"w0rp/ale",

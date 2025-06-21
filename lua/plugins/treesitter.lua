@@ -32,6 +32,7 @@ return {
 					'swift',
 					'tsx',
 					'typescript',
+					'python',
 					'vim',
 					'vimdoc'
 				},
